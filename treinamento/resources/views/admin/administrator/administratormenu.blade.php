@@ -5,16 +5,16 @@
         <a class="nav-link text-white" href="/home">Home</a>
     </li>
     <li class="nav-item">
-        <a class="nav-link text-white" href="/addemployee">Cadastro de funcionário</a>
+        <a class="nav-link text-white" href="/addfuncionario">Cadastro de funcionário</a>
     </li>
     <li class="nav-item">
-        <a class="nav-link text-white" href="/employeedevelopment">Desempenho do funcionário</a>
+        <a class="nav-link text-white" href="/desempenhofuncionario">Desempenho do funcionário</a>
     </li>
     <li class="nav-item">
-        <a class="nav-link text-white" href="/addtraining">Adcionar treinamentos</a>
+        <a class="nav-link text-white" href="/addtreinamentos">Adcionar treinamentos</a>
     </li>
     <li class="nav-item">
-        <a class="nav-link text-white" href="/addtest">Adcionar testes</a>
+        <a class="nav-link text-white" href="/addteste">Adcionar testes</a>
     </li>
     <li class="nav-item">
         <a class="nav-link text-white" href="#">Sair</a>

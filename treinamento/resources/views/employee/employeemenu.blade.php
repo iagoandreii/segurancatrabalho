@@ -1,5 +1,4 @@
 @extends('templates.menu')
-@extends('templates.employeemenu')
 @section('menu')
 <li class="nav-item active">
     <a class="nav-link text-white" href="#">Home</a>
