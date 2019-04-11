@@ -9,11 +9,9 @@
         <meta name="viewport" content="height=device-height, initial-scale=1">
         <meta name="viewport" content="height=device-height, user-scalable=no">
         <link rel="stylesheet" type="text/css" media="screen" href="css/app.css">
-        <link rel="stylesheet" type="text/css" href="css/index.css">
-        <link rel="stylesheet" type="text/css" href="css/employee.css">
-        <link rel="stylesheet" type="text/css" href="css/menu.css">
+        @yield('css')
     </head>
-    <body>
+    <body id="body">
         @yield('body')
         <script src="js/app.js"></script>
     </body>
