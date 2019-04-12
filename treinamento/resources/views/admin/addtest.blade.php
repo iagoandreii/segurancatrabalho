@@ -4,9 +4,14 @@
 @extends('admin.administrator.administratormenu')
 @extends('templates.struct')
 
+@section('css')
+  <link rel="stylesheet" type="text/css" href="css/menu.css">
+@endsection
+
 @section('title')
     Teste
 @endsection
+
 @section('body')
     @section('tabletitle')
       <th scope="col">Nome</th>

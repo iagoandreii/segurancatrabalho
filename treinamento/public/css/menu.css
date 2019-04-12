@@ -1,0 +1,21 @@
+#body{
+    background: url('/css/back.jpg');
+    background-size: 100% 100%;
+    top: 0;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.na{
+    box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.2);
+    top: -15px;
+}
+.na2{
+    list-style: none;
+    border-radius: 20px;
+    width: 900px;
+    top: -70px;
+}
+button{
+    border-radius: 20px;
+}
