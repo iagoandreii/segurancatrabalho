@@ -11,9 +11,9 @@
         <tbody>
             <tr>
                 @yield('tablebody')
-                <th scope="row"><button type="button" class="funci btn btn-outline-success btn-sm" data-toggle="modal" data-target="#visualization">Visualizar</button></th>
-                <th scope="row"><button type="button" class="funci btn btn-outline-warning btn-sm" data-toggle="modal" data-target="#change">Alterar</button></th>
-                <th scope="row"><button type="button" class="funci btn btn-outline-danger btn-sm" data-toggle="modal" data-target="#delete">Excluir</button></th>
+                <th scope="row"><button type="button" class="funci btn btn-outline-success btn-md" data-toggle="modal" data-target="#visualization">Visualizar</button></th>
+                <th scope="row"><button type="button" class="funci btn btn-outline-warning btn-md" data-toggle="modal" data-target="#change">Alterar</button></th>
+                <th scope="row"><button type="button" class="funci btn btn-outline-danger btn-md" data-toggle="modal" data-target="#delete">Excluir</button></th>
             </tr>
         </tbody>
     </table>

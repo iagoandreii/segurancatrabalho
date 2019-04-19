@@ -1,7 +1,6 @@
 @extends('templates.table')
-@extends('admin.administrator.administratormenu')
+@extends('templates.menu')
 @extends('templates.struct')
-
 @section('title')   
 Funcionário 
 @endsection
@@ -18,7 +17,7 @@ Funcionário
         <th scope="col">Área</th>
         <th scope="col">Status</th>
     @endsection
-    @section('body')
+    @section('tablebody')
         <td></td>
     @endsection 
 @endsection

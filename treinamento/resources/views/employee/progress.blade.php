@@ -6,7 +6,8 @@
 @endsection
 
 @section('body')
-    @include('employee.templatesemployee.employeemenu')<br><br>
+    
+	@include('templates.menu')<br><br>
     <h1 class="display-4 text-center text-success">Progresso</h1>
     <div class="container"><br>
     <div class="progress" style="top:100px;">

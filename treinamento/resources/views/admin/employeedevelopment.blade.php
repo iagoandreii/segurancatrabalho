@@ -1,5 +1,5 @@
 @extends('templates.table')
-@extends('admin.administrator.administratormenu')
+@extends('templates.menu')
 @extends('templates.struct')
 
 @section('title')   

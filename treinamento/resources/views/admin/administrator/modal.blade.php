@@ -7,7 +7,7 @@
 			 </div>
 			 <div class="modal-body mod">
 				@yield('modalregister')
-				<input type="submit" value="Cadastrar" class="btn btn-warning btn-block text-white">
+				<input type="submit" value="Cadastrar" style="margin-top: 10px;" class="btn btn-warning btn-block text-white">
 			 </div>
 		 </div>
 	 </div>

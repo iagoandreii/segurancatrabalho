@@ -4,8 +4,10 @@ Route::get('/', function () {
     return view('auth.login');
 });
 Route::get('/home', function () {
-    return view('admin.home');
+    return view('templates.home');
 });
+
+
 Route::get('/funcionario', function () {
     return view('admin.addemployee');
 });
@@ -18,26 +20,19 @@ Route::get('/treinamento', function () {
 Route::get('/teste', function () {
     return view('admin.addtest');
 });
-Route::get('/home', function () {
-    return view('admin.home');
-});
 
-Route::get('/funcionario/home', function () {
-    return view('employee.home');
-});
 
-Route::get('/funcionario/informacao', function () {
+/*
+Route::get('/informacao', function () {
     return view('employee.employee');
 });
-
-Route::get('/funcionario/progresso', function () {
-    return view('employee.progress');
+Route::get('/desempenho', function () {
+    return view('employee.development');
 });
-
-Route::get('/funcionario/treinamento', function () {
+Route::get('/treinamento', function () {
     return view('employee.training');
 });
-
-Route::get('/funcionario/teste', function () {
+Route::get('/teste', function () {
     return view('employee.test');
 });
+*/

@@ -1,7 +1,7 @@
 @extends('admin.administrator.modal')
 @extends('admin.administrator.table')
 @extends('admin.administrator.register')
-@extends('admin.administrator.administratormenu')
+@extends('templates.menu')
 @extends('templates.struct')
 
 @section('css')
@@ -48,43 +48,6 @@
                   <label for="li2">Link 2</label>        			
                   <input type="text" class="form-control" id="li2" name="l2">
                 </div>
-                <div class="col">
-                  <label for="li3">Link 3</label>
-                  <input type="text" class="form-control" id="li3" name="l3">
-                </div>
-                                </div><br>
-                                <div class="row">
-                <div class="col">
-                  <label for="li4">Link 4</label>        			
-                  <input type="text" class="form-control" id="li4" name="l4">
-                </div>
-                <div class="col">
-                  <label for="li5">Link 5</label>
-                  <input type="text" class="form-control" id="li5" name="l5">
-                </div>
-                <div class="col">
-                  <label for="li6">Link 6</label>        			
-                  <input type="text" class="form-control" id="li6" name="l6">
-                </div>
-                                </div><br>
-                                <div class="row">
-                <div class="col">
-                  <label for="li7">Link 7</label>
-                  <input type="text" class="form-control" id="li7" name="l7">
-                </div>
-                <div class="col">
-                  <label for="li8">Link 8</label>        			
-                  <input type="text" class="form-control" id="li8" name="l8">
-                </div>
-                <div class="col">
-                  <label for="li9">Link 9</label>
-                  <input type="text" class="form-control" id="li9" name="l9">
-                </div>
-                <div class="col">
-                  <label for="li10">Link 10</label>        			
-                  <input type="text" class="form-control" id="li10" name="l10">
-                </div>
-                                </div><br>
         </form>
     @endsection
     @section('modalvisualization')
@@ -125,42 +88,6 @@
       <div class="col">
         <label for="li2">Link 2</label>        			
         <input type="text" class="form-control" id="li2" name="l2">
-      </div>
-      <div class="col">
-        <label for="li3">Link 3</label>
-        <input type="text" class="form-control" id="li3" name="l3">
-      </div>
-                      </div><br>
-                      <div class="row">
-      <div class="col">
-        <label for="li4">Link 4</label>        			
-        <input type="text" class="form-control" id="li4" name="l4">
-      </div>
-      <div class="col">
-        <label for="li5">Link 5</label>
-        <input type="text" class="form-control" id="li5" name="l5">
-      </div>
-      <div class="col">
-        <label for="li6">Link 6</label>        			
-        <input type="text" class="form-control" id="li6" name="l6">
-      </div>
-                      </div><br>
-                      <div class="row">                                            
-      <div class="col">
-        <label for="li7">Link 7</label>
-        <input type="text" class="form-control" id="li7" name="l7">
-      </div>
-      <div class="col">
-        <label for="li8">Link 8</label>        			
-        <input type="text" class="form-control" id="li8" name="l8">
-      </div>
-      <div class="col">
-        <label for="li9">Link 9</label>
-        <input type="text" class="form-control" id="li9" name="l9">
-      </div>
-      <div class="col">
-        <label for="li10">Link 10</label>        			
-        <input type="text" class="form-control" id="li10" name="l10">
       </div>
     </form>
     @endsection

@@ -6,7 +6,7 @@
 @endsection
 
 @section('body')
-    @include('employee.templatesemployee.employeemenu')
+    @include('templates.menu')
     @section('tabletitle')
         <th scope="col">Nome</th>
         <th scope="col">CPF</th>

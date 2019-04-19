@@ -1,7 +1,7 @@
 @extends('admin.administrator.table')
 @extends('admin.administrator.modal')
 @extends('admin.administrator.register')
-@extends('admin.administrator.administratormenu')
+@extends('templates.menu')
 @extends('templates.struct')
 
 @section('css')
@@ -87,7 +87,7 @@ Funcionário
       <div class="row">
         <div class="col">
           <label for="ce">CEP</label><br>
-          <input type="text" onkeypress="return somenteNumeros(event)"" id="cep" onblur="pesquisacep(this.value);" class="form-control" name="cep">
+          <input type="text" onkeypress="return somenteNumeros(event)" id="cep" onblur="pesquisacep(this.value);" class="form-control" name="cep">
         </div>
         <div class="col">
           <label for="r">Rua</label><br>
