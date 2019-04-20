@@ -1,8 +1,6 @@
-@extends('employee.employee.modal')
-@extends('employee.employee.table')
+@extends('templates.table')
 <div style="margin-top: -8px;">Lazal</div>
-@extends('templates.menu')
-@extends('templates.struct')
+@extends('templates.home')
 
 @section('css')
   <link rel="stylesheet" type="text/css" href="css/menu.css">
@@ -17,11 +15,13 @@
         <th scope="col">Nome</th>
         <th scope="col">Árae</th>
         <th scope="col">Cargo</th>
+        <th scope="col"></th>
     @endsection
     @section('tablebody')
         <td>Treinamento1</td>
         <td>Área1</td>
         <td>Cargo1</td>
+        <th><button class="btn btn-success btn-sm" data-toggle="modal" data-target="#visualization">Visualizar</button></th>
     @endsection
    
     @section('modalvisualization')

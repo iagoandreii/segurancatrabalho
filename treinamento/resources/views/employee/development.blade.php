@@ -1,6 +1,5 @@
 @extends('templates.table')
-@extends('templates.menu')
-@extends('templates.struct')
+@extends('templates.home')
 @section('title')   
 Funcionário 
 @endsection

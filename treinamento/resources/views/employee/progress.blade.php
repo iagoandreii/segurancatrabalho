@@ -1,13 +1,12 @@
 @extends('templates.table')
-@extends('templates.struct')
+@extends('templates.home')
 
 @section('title')
     Progresso do funcionário
 @endsection
 
 @section('body')
-    
-	@include('templates.menu')<br><br>
+    <br><br>
     <h1 class="display-4 text-center text-success">Progresso</h1>
     <div class="container"><br>
     <div class="progress" style="top:100px;">

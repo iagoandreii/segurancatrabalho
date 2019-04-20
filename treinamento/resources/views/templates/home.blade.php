@@ -1,4 +1,3 @@
-@extends('templates.menu')
 @extends('templates.struct')
 
 <div style="margin-top:-10px;">Lazal</div>

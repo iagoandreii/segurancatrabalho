@@ -1,11 +1,10 @@
 @extends('templates.table')
-@extends('templates.menu')
-@extends('templates.struct')
+@extends('templates.home')
 
 @section('title')   
 Funcionário 
 @endsection
-<div style="margin-top:-10px;">Lazal</div>
+<div style="margin-top:-25px;">Lazal</div>
 @section('css')
   <link rel="stylesheet" type="text/css" href="css/menu.css">
 @endsection

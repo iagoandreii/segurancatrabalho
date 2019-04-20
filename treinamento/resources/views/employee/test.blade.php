@@ -1,8 +1,7 @@
-@extends('employee.employee.modal')
-@extends('employee.employee.table')
+@extends('templatesmodal')
+@extends('templatestable')
 <div style="margin-top: -8px;">Lazal</div>
-@extends('employee.employee.employeemenu')
-@extends('templates.struct')
+@extends('templates.home')
 
 @section('css')
   <link rel="stylesheet" type="text/css" href="css/menu.css">

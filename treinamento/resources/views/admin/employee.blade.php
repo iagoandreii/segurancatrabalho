@@ -1,10 +1,24 @@
-@extends('templates.table')
 @extends('templates.modal')
-<div style="margin-top: -8px;">Lazal</div>
 @extends('templates.home')
 
 @section('css')
   <link rel="stylesheet" type="text/css" href="/css/menu.css">
+  <style type="text/css">
+    #g{
+      color: green;
+      text-decoration: none;
+    }
+    .v:hover #g{
+      color: white;
+    }
+    #y{
+      color: yellow;
+      text-decoration: none;
+    }
+    .a:hover #y{
+      color: white;
+    }
+  </style>
 @endsection
 
 @section('title')   
@@ -12,16 +26,33 @@ Funcionário
 @endsection
 
 @section('body')
-@section('tabletitle')
-  <th scope="col">Nome</th>
-  <th scope="col">Status</th>
-@endsection
-
-@section('tablebody')
-  <td>Nome1</td>
-  <td>Andamento</td>
-@endsection
-
+  <center>
+    <button style="margin-top: -10px; color: white; margin-left: -30px; border-radius: 20px; font-size: 18pt;" type="button" class="funci v btn btn-outline-success btn-lg"><a id="g" href="/cadastrar_funcionario" >Cadastrar</a></button>
+  </center>
+  <div class="container">
+    <table class="table table-success bg-light table-hover text-center" style="margin-top: 30px;">
+        <thead>
+            <tr char="active">
+                <td>Nome1</td>
+                <td>Sobrenome1</td>
+                <td>Andamento</td>
+                <th></th>
+                <th></th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>     
+                <th scope="col">Nome</th>
+                <th scope="col">Sobrenome</th>
+                <th scope="col">Status</th>
+                <th scope="row"><button style="margin-left: 0px;" type="button" class="funci v btn btn-outline-success btn-md" data-toggle="modal" data-target="#visualization">Visualizar</button></th>
+                <th scope="row"><button style="margin-left: -30px;" type="button" class="funci a btn btn-outline-warning btn-md"><a id="y" href="/alterar_funcionario">Alterar</a></button></th>
+                <th scope="row"><button style="margin-left: -30px;" type="button" class="funci btn btn-outline-danger btn-md" data-toggle="modal" data-target="#delete">Excluir</button></th>
+            </tr>
+        </tbody>
+    </table>
+</div>
   @section('modalvisualization')
   <form action="#" method="POST">
     <div class="form-group">
@@ -113,4 +144,24 @@ Funcionário
     </div>
   </form>
   @endsection
+
+  <form method="POST" action="">
+      <div class="modal fade" id="delete" tabindex="-1" role="dialog" aria-labelledby="delete" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content" style="margin-top: 200px;">
+              <div class="modal-header">
+                  <h5 class="modal-title" id="excluir">Excluir</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              </div>
+              <div class="modal-body">
+                <h2 class="lead text-center" style="font-size: 15pt; font-weight: bold;">Tem certerza que deseja excluir?</h2>
+                  <div class="modal-footer">
+                      <button type="submit" class="btn btn-danger btn-md" class="btn btn-success">Sim</button>
+                    <button style="color: white;" class="btn btn-warning btn-md" class="btn btn-success">Não</button>
+                  </div>
+              </div>
+            </div>
+        </div>
+      </div>
+    </form>
 @endsection

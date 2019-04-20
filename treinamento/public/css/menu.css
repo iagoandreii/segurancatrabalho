@@ -19,3 +19,7 @@
 button{
     border-radius: 20px;
 }
+
+.funci{
+    transition: 2s;
+}
