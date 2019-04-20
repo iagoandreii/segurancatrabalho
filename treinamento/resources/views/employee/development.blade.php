@@ -1,10 +1,9 @@
 @extends('templates.table')
 @extends('templates.home')
-
 @section('title')   
 Funcionário 
 @endsection
-<div style="margin-top:-25px;">Lazal</div>
+<div style="margin-top:-10px;">Lazal</div>
 @section('css')
   <link rel="stylesheet" type="text/css" href="css/menu.css">
 @endsection
@@ -17,7 +16,7 @@ Funcionário
         <th scope="col">Área</th>
         <th scope="col">Status</th>
     @endsection
-    @section('body')
+    @section('tablebody')
         <td></td>
     @endsection 
 @endsection

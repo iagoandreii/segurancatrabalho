@@ -1,26 +1,35 @@
-@extends('employee.templatesemployee.employeemodal')
 @extends('templates.table')
-@extends('templates.struct')
+<div style="margin-top: -8px;">Lazal</div>
+@extends('templates.home')
+
+@section('css')
+  <link rel="stylesheet" type="text/css" href="css/menu.css">
+@endsection
 
 @section('title')
-    Treinamentos
+    Treinamento
 @endsection
 
 @section('body')
- @include('employee.templatesemployee.employeemenu')
- @section('tabletitle')
-    <th scope="col">Nome</th>
-    <th scope="col">Área</th>
-    <th scope="col"></th>
-@endsection
-@section('tablebody')
-    <th scope="row"></th>
-    <th scope="row"></th>
-    <th scope="row"><button type="button" class="funci btn btn-outline-success btn-sm" data-toggle="modal" data-target="#visualization">Visualizar</button></th>
-@endsection
-@section('modalvisualization')    
-    <div class="form-group">
+    @section('tabletitle')
+        <th scope="col">Nome</th>
+        <th scope="col">Árae</th>
+        <th scope="col">Cargo</th>
+        <th scope="col"></th>
+    @endsection
+    @section('tablebody')
+        <td>Treinamento1</td>
+        <td>Área1</td>
+        <td>Cargo1</td>
+        <th><button class="btn btn-success btn-sm" data-toggle="modal" data-target="#visualization">Visualizar</button></th>
+    @endsection
+   
+    @section('modalvisualization')
+      <div class="form-group">
         <iframe width="100%" height="315" src="https://www.youtube.com/embed/itMS9JrUECo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </div><br>
-@endsection
+      </div><br>
+      <div class="form-group">
+        <iframe width="100%" height="315" src="https://www.youtube.com/embed/itMS9JrUECo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div><br>
+    @endsection
 @endsection

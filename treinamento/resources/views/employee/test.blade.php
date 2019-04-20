@@ -1,42 +1,69 @@
-@extends('employee.templatesemployee.employeemodal')
-@extends('templates.table')
-@extends('templates.struct')
+@extends('templatesmodal')
+@extends('templatestable')
+<div style="margin-top: -8px;">Lazal</div>
+@extends('templates.home')
+
+@section('css')
+  <link rel="stylesheet" type="text/css" href="css/menu.css">
+@endsection
 
 @section('title')
-    Testes
+    Teste
 @endsection
 
 @section('body')
-    @include('employee.templatesemployee.employeemenu')
     @section('tabletitle')
-        <th scope="col">Nome</th>
-        <th scope="col">Área</th>
-        <th scope="col"></th>
+      <th scope="col">Nome</th>
+      <th scope="col">Árae</th>
+      <th scope="col">Cargo</th>
     @endsection
+
     @section('tablebody')
-        <th scope="row"></th>
-        <th scope="row"></th>
-        <th scope="row"><button type="button" class="funci btn btn-outline-success btn-sm" data-toggle="modal" data-target="#visualization">Visualizar</button></th>
+      <td>Teste1</td>
+      <td>Área1</td>
+      <td>Cargo1</td>
     @endsection
-    @section('modalvisualization')
-    <form method="post">
-        <div class="form-group">
-            <label>Questão 1</label>
-            <input type="text" class="form-control" value="a" disabled>
+@section('modalvisualization')
+<form>
+    <!--Teste questão 1-->
+    <div class="form-group">
+        <input type="text" class="form-control" value="" disabled>                                          
+    </div>
+    <div class="row">
+        <div class="col">
+            <label><input type="text" class="form-control text-center" value="jhd" disabled></label>
+            <input type="checkbox">
         </div>
-        <div class="form-group form-check">
-            <input type="checkbox" class="form-check-input" id="check1">
-            <label class="form-check-label" for="check1">OP1</label>
+        <div class="col">
+            <label><input type="text" class="form-control text-center" value="jhd" disabled></label>
+            <input type="checkbox">
         </div>
-        <div class="form-group form-check">
-            <input type="checkbox" class="form-check-input" id="check2">
-            <label class="form-check-label" for="check2">OP2</label>
+        <div class="col">
+            <label><input type="text" class="form-control text-center" value="jhd" disabled></label>
+            <input type="checkbox">
         </div>
-        <div class="form-group form-check">
-            <input type="checkbox" class="form-check-input" id="check3">
-            <label class="form-check-label" for="check3">OP3</label>
+    </div><br><br><br>
+        <!--Teste questão 2-->
+    <div class="form-group">
+        <input type="text" class="form-control" value="" disabled>
+    </div>
+    <div class="row">
+        <div class="col">
+            <label><input type="text" class="form-control text-center" value="jhd" disabled></label>
+            <input type="checkbox">
         </div>
-        <button type="submit" class="btn btn-primary btn-block">Enviar</button>
-    </form>
-    @endsection
+        <div class="col">
+            <label><input type="text" class="form-control text-center" value="jhd" disabled></label>
+            <input type="checkbox">
+        </div>
+        <div class="col">
+            <label><input type="text" class="form-control text-center" value="jhd" disabled></label>
+            <input type="checkbox">
+        </div>
+    </div><br><br>
+    <div class="form-group">
+        <input class="btn btn-outline-success btn-block" type="submit" value="Enviar" name="enviar">
+    </div>
+</form>
+@endsection
 @endsection

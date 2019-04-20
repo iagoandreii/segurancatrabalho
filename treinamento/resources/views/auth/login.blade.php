@@ -1,34 +1,32 @@
 @extends('templates.struct')
+@section('css')
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+@endsection
 @section('title')
     Login
 @endsection
 
 @section('body')
-<div id="login">
+<div id="login" class="col">
     <form method="POST" action="">
-        <div class="container">
             <div class="row">
-                <div class="col-md-offset-5 col-md-3 col">
-                    <div class="form-login">
-                            <img src="css/user.jpg"><br>
-                            <input type="text" id="nome" class="form-control input-sm chat-input" placeholder="Usuário"  required/>
+                <div class="form-login">
+                    <img src="css/usuario.png" width="100" height="100"><br>
+                    <input type="text" id="nome" class="form-control input-sm chat-input" placeholder="Usuário"  required/>
+                    <br>
+                    <input type="password" id="senha" class="form-control input-sm chat-input" placeholder="Senha"  required/>
+                    <br>
+                    <div class="wrapper">
+                        <span class="group-btn">     
+                            <button class="btn btn-outline-success btn-block">Entrar<i class="fa fa-sign-in"></i></button>
+                        </span> 
                             <br>
-                            <input type="password" id="senha" class="form-control input-sm chat-input" placeholder="Senha"  required/>
-                            <br>
-                        <div class="wrapper">
-                            <span class="group-btn">     
-                                <button class="btn btn-outline-success btn-block">Entrar<i class="fa fa-sign-in"></i></button>
-                            </span> 
-                            <br>
-                            <a id="a" class="bt text-primary" data-toggle="modal" data-target="#EsqueceuSenha">Esqueceu a senha?<i class="fa fa-sign-in"></i></a>
-                        </div>
+                        <a style="cursor: pointer;" id="a" class="bt text-primary" data-toggle="modal" data-target="#EsqueceuSenha">Esqueceu a senha?<i class="fa fa-sign-in"></i></a>
                     </div>
                 </div>
             </div>
-        </div>
     </form>
 </div>
-
     <form method="POST" action="">
         <div class="modal fade" id="EsqueceuSenha" tabindex="-1" role="dialog" aria-labelledby="RecuperarEmail" aria-hidden="true">
             <div class="modal-dialog" role="document">

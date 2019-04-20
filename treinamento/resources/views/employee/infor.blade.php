@@ -1,12 +1,11 @@
 @extends('templates.table')
-@extends('templates.struct')
+@extends('templates.home')
 
 @section('title')
     Informações do funcionário
 @endsection
 
 @section('body')
-    @include('employee.templatesemployee.employeemenu')
     @section('tabletitle')
         <th scope="col">Nome</th>
         <th scope="col">CPF</th>
